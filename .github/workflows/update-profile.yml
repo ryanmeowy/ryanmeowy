@@ -1,0 +1,49 @@
+name: Refresh profile card
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * *' # 10:00 Asia/Shanghai (UTC+8)
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/build_profile.py'
+      - 'assets/workspace.png'
+      - '.github/workflows/update-profile.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-card
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install cloc 2.10
+        run: |
+          mkdir -p "$RUNNER_TEMP/profile-bin"
+          curl --fail --location --silent --show-error --retry 3 \
+            https://github.com/AlDanial/cloc/releases/download/v2.10/cloc-2.10.pl \
+            -o "$RUNNER_TEMP/profile-bin/cloc"
+          echo "bf59272455172108072a0a106379f7509fd4349bdcfd85203bac038ccd286d83  $RUNNER_TEMP/profile-bin/cloc" | sha256sum --check
+          chmod +x "$RUNNER_TEMP/profile-bin/cloc"
+          echo "$RUNNER_TEMP/profile-bin" >> "$GITHUB_PATH"
+      - name: Refresh public statistics and render cards
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/build_profile.py --refresh
+      - name: Save updated cards
+        run: |
+          git add assets/hero.svg assets/hero-mobile.svg assets/stats.json
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore: refresh profile statistics'
+          git push

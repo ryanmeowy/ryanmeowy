@@ -1,0 +1,176 @@
+{
+  "repos": 27,
+  "stars": 89,
+  "followers": 2,
+  "following": 1,
+  "commits": 1021,
+  "contributions": 1257,
+  "lines_of_code": 77329,
+  "code_counting": {
+    "tool": "cloc 2.10",
+    "scope": "Owned public non-fork default branches; excludes dependencies, generated output, comments and blank lines",
+    "repositories": [
+      {
+        "repository": "ryanmeowy/anchr-app",
+        "branch": "main",
+        "commit": "404c07d06886d0fcfd5ef6e6896d88ea509f845c",
+        "files": 746,
+        "code": 53663,
+        "languages": {
+          "Java": 51354,
+          "XML": 1425,
+          "SQL": 281,
+          "YAML": 281,
+          "Maven": 186,
+          "JSON": 119,
+          "Dockerfile": 17
+        }
+      },
+      {
+        "repository": "ryanmeowy/anchr-docling",
+        "branch": "main",
+        "commit": "69c614e6edd6b3417da2a941c08fa4b9b9841597",
+        "files": 22,
+        "code": 3886,
+        "languages": {
+          "Python": 3853,
+          "TOML": 33
+        }
+      },
+      {
+        "repository": "ryanmeowy/anchr-eval",
+        "branch": "main",
+        "commit": "e3781d99366ac8a2ef991115e64c8d9243320101",
+        "files": 31,
+        "code": 1774,
+        "languages": {
+          "Python": 1310,
+          "JSON": 447,
+          "TOML": 17
+        }
+      },
+      {
+        "repository": "ryanmeowy/ArchUnitExample",
+        "branch": "master",
+        "commit": "b117ec3c470d83d184b920298906d35ccc3d261c",
+        "files": 20,
+        "code": 344,
+        "languages": {
+          "Java": 315,
+          "Gradle": 22,
+          "Properties": 5,
+          "XML": 2
+        }
+      },
+      {
+        "repository": "ryanmeowy/clipy-lite",
+        "branch": "main",
+        "commit": "06150b257dee6d52a28609fca2eeb86cd09320c8",
+        "files": 19,
+        "code": 1873,
+        "languages": {
+          "Swift": 1754,
+          "Bourne Shell": 119
+        }
+      },
+      {
+        "repository": "ryanmeowy/comments4blog",
+        "branch": "main",
+        "commit": null,
+        "files": 0,
+        "code": 0,
+        "empty": true
+      },
+      {
+        "repository": "ryanmeowy/dsh-tool-retriever",
+        "branch": "main",
+        "commit": "8007b0823d94afe6cb7b06beb96d79ad80ec4f0f",
+        "files": 60,
+        "code": 3228,
+        "languages": {
+          "TypeScript": 2101,
+          "JavaScript": 627,
+          "JSON": 271,
+          "YAML": 193,
+          "Bourne Shell": 36
+        }
+      },
+      {
+        "repository": "ryanmeowy/llm-intent-provider",
+        "branch": "main",
+        "commit": "b13720289f396d32977119fe3ed4a29006131a90",
+        "files": 6,
+        "code": 185,
+        "languages": {
+          "Python": 172,
+          "Protocol Buffers": 13
+        }
+      },
+      {
+        "repository": "ryanmeowy/pic",
+        "branch": "master",
+        "commit": null,
+        "files": 0,
+        "code": 0,
+        "excluded": "Image asset repository, no source files"
+      },
+      {
+        "repository": "ryanmeowy/picindex",
+        "branch": "main",
+        "commit": "94c4fd0b77a132f0ecdf3db8d0b13111ca91156e",
+        "files": 178,
+        "code": 10785,
+        "languages": {
+          "Java": 8064,
+          "Python": 2169,
+          "Maven": 234,
+          "YAML": 174,
+          "JSON": 78,
+          "Protocol Buffers": 66
+        }
+      },
+      {
+        "repository": "ryanmeowy/ryanmeowy",
+        "branch": "main",
+        "commit": "2f2e830ce24ef5882b2637af555e934ef48b6796",
+        "files": 1,
+        "code": 63,
+        "languages": {
+          "JSON": 63
+        }
+      },
+      {
+        "repository": "ryanmeowy/ryanxys.github.io",
+        "branch": "master",
+        "commit": null,
+        "files": 0,
+        "code": 0,
+        "excluded": "Generated Hexo site: rendered posts and theme assets"
+      },
+      {
+        "repository": "ryanmeowy/smart-vision-py",
+        "branch": "main",
+        "commit": "a63b4707695c4b4c3f424e1873cd75f419765e43",
+        "files": 7,
+        "code": 545,
+        "languages": {
+          "Python": 492,
+          "Protocol Buffers": 53
+        }
+      },
+      {
+        "repository": "ryanmeowy/ThreadPoolDemo",
+        "branch": "main",
+        "commit": "dded0bd322baac9db6b778567feeba99c558469b",
+        "files": 4,
+        "code": 983,
+        "languages": {
+          "Java": 969,
+          "Maven": 14
+        }
+      }
+    ]
+  },
+  "since": 2020,
+  "updated": "2026-09-10"
+}

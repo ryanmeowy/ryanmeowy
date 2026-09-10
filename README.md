@@ -1,22 +1,6 @@
 <p align="center">
   <picture>
-    <source
-      media="(prefers-color-scheme: dark)"
-      srcset="https://neofetch-profile.vercel.app/api?username=ryanmeowy&theme=github-dark&config=https%3A%2F%2Fraw.githubusercontent.com%2Fryanmeowy%2Fryanmeowy%2Fmain%2Fneofetch.json"
-    >
-    <img
-      alt="ryanmeowy neofetch"
-      src="https://neofetch-profile.vercel.app/api?username=ryanmeowy&theme=github-light&config=https%3A%2F%2Fraw.githubusercontent.com%2Fryanmeowy%2Fryanmeowy%2Fmain%2Fneofetch.json"
-    >
+    <source media="(max-width: 600px)" srcset="./assets/hero-mobile.svg">
+    <img src="./assets/hero.svg" width="100%" alt="Ryan's pixel workspace: a programmer, a cat, and Shanghai at night. Backend Engineer · Search / RAG / Agent · Java &amp; Python · Building Anchr · Shanghai, China.">
   </picture>
-</p>
-
-<p align="center">
-  <code>searching for better answers.</code>
-</p>
-
-<p align="center">
-  <a href="https://ryanyang.cn">blog</a>
-  ·
-  <a href="https://anchr.cloud">anchr</a>
 </p>
