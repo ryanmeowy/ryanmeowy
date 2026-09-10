@@ -86,7 +86,7 @@
 <g transform="translate(39 1134) scale(1.15)" fill="none" color="#f5d76b" stroke="#f5d76b" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 4-5 6 5 6m8-12 5 6-5 6M12 2 8 18"/></g>
 <text xml:space="preserve" x="70" y="1154" fill="#64c5ff" font-size="17" font-weight="400">Lines of Code</text>
 <text xml:space="preserve" x="213" y="1154" fill="#edf3fc" font-size="18" font-weight="400">:</text>
-<text xml:space="preserve" x="234" y="1154" fill="#edf3fc" font-size="18" font-weight="400">77,329</text>
+<text xml:space="preserve" x="234" y="1154" fill="#edf3fc" font-size="18" font-weight="400">77,610</text>
 </g>
 <g><title>Since</title>
 <g transform="translate(319 1134) scale(1.15)" fill="none" color="#64c5ff" stroke="#64c5ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="9"/><path d="M10 4v7l5 3"/></g>

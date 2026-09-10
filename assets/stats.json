@@ -5,7 +5,7 @@
   "following": 1,
   "commits": 1021,
   "contributions": 1257,
-  "lines_of_code": 77329,
+  "lines_of_code": 77610,
   "code_counting": {
     "tool": "cloc 2.10",
     "scope": "Owned public non-fork default branches; excludes dependencies, generated output, comments and blank lines",
@@ -132,11 +132,12 @@
       {
         "repository": "ryanmeowy/ryanmeowy",
         "branch": "main",
-        "commit": "2f2e830ce24ef5882b2637af555e934ef48b6796",
-        "files": 1,
-        "code": 63,
+        "commit": "dc1cd6c41f91596bfabc2fdd01a5f81742b92897",
+        "files": 2,
+        "code": 344,
         "languages": {
-          "JSON": 63
+          "Python": 299,
+          "YAML": 45
         }
       },
       {
