@@ -60,7 +60,7 @@
 <g transform="translate(919 583) scale(1.25)" fill="none" color="#edf3fc" stroke="#edf3fc" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 1h16v14H2zM2 12h16M10 15v4m-5 0h10"/></g>
 <text xml:space="preserve" x="972" y="603" fill="#64c5ff" font-size="18" font-weight="400">Repos</text>
 <text xml:space="preserve" x="1120" y="603" fill="#edf3fc" font-size="18" font-weight="400">:</text>
-<text xml:space="preserve" x="1140" y="603" fill="#edf3fc" font-size="19" font-weight="400">27</text>
+<text xml:space="preserve" x="1140" y="603" fill="#edf3fc" font-size="19" font-weight="400">28</text>
 </g>
 <g><title>Followers</title>
 <g transform="translate(1243 583) scale(1.25)" fill="none" color="#64c5ff" stroke="#64c5ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="6" r="3" fill="currentColor"/><circle cx="15" cy="7" r="2.5" fill="currentColor"/><path d="M1 19v-3a6 6 0 0 1 12 0v3zm13-8a5 5 0 0 1 5 5v3h-4"/></g>
@@ -72,7 +72,7 @@
 <g transform="translate(919 617) scale(1.25)" fill="none" color="#edf3fc" stroke="#edf3fc" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="1" width="5" height="5" rx="1"/><rect x="1" y="14" width="5" height="5" rx="1"/><rect x="14" y="1" width="5" height="5" rx="1"/><rect x="14" y="14" width="5" height="5" rx="1"/><path d="M3.5 6v8m13-8v8M6 3.5h8M6 16.5h8"/></g>
 <text xml:space="preserve" x="972" y="637" fill="#64c5ff" font-size="18" font-weight="400">Commits</text>
 <text xml:space="preserve" x="1120" y="637" fill="#edf3fc" font-size="18" font-weight="400">:</text>
-<text xml:space="preserve" x="1140" y="637" fill="#edf3fc" font-size="19" font-weight="400">1,021</text>
+<text xml:space="preserve" x="1140" y="637" fill="#edf3fc" font-size="19" font-weight="400">1,216</text>
 </g>
 <g><title>Following</title>
 <g transform="translate(1243 617) scale(1.25)" fill="none" color="#64c5ff" stroke="#64c5ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="4" cy="4" r="2.5"/><circle cx="16" cy="4" r="2.5"/><circle cx="10" cy="17" r="2.5"/><path d="M4 7v3l6 4 6-4V7"/></g>
@@ -84,7 +84,7 @@
 <g transform="translate(919 651) scale(1.25)" fill="none" color="#f5d76b" stroke="#f5d76b" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 4-5 6 5 6m8-12 5 6-5 6M12 2 8 18"/></g>
 <text xml:space="preserve" x="972" y="671" fill="#64c5ff" font-size="18" font-weight="400">Lines of Code</text>
 <text xml:space="preserve" x="1120" y="671" fill="#edf3fc" font-size="18" font-weight="400">:</text>
-<text xml:space="preserve" x="1140" y="671" fill="#edf3fc" font-size="19" font-weight="400">77,610</text>
+<text xml:space="preserve" x="1140" y="671" fill="#edf3fc" font-size="19" font-weight="400">110,133</text>
 </g>
 <g><title>Since</title>
 <g transform="translate(1243 651) scale(1.25)" fill="none" color="#64c5ff" stroke="#64c5ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="9"/><path d="M10 4v7l5 3"/></g>
@@ -102,7 +102,7 @@
 <g transform="translate(1243 685) scale(1.25)" fill="none" color="#64c5ff" stroke="#64c5ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 1h10v7a5 5 0 0 1-10 0zm0 2H1v3a5 5 0 0 0 5 5m9-8h4v3a5 5 0 0 1-5 5m-4 2v6m-5 0h10"/></g>
 <text xml:space="preserve" x="1284" y="705" fill="#64c5ff" font-size="18" font-weight="400">Contribution</text>
 <text xml:space="preserve" x="1424" y="705" fill="#edf3fc" font-size="18" font-weight="400">:</text>
-<text xml:space="preserve" x="1448" y="705" fill="#edf3fc" font-size="19" font-weight="400">1,257</text>
+<text xml:space="preserve" x="1448" y="705" fill="#edf3fc" font-size="19" font-weight="400">1,258</text>
 </g>
 <text xml:space="preserve" x="1515.5" y="705" fill="#87a1bf" font-size="15" font-weight="400">(last year)</text>
 <g id="cat-art">

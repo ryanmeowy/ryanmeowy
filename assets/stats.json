@@ -1,11 +1,11 @@
 {
-  "repos": 27,
+  "repos": 28,
   "stars": 89,
   "followers": 2,
   "following": 1,
-  "commits": 1021,
-  "contributions": 1257,
-  "lines_of_code": 77610,
+  "commits": 1216,
+  "contributions": 1258,
+  "lines_of_code": 110133,
   "code_counting": {
     "tool": "cloc 2.10",
     "scope": "Owned public non-fork default branches; excludes dependencies, generated output, comments and blank lines",
@@ -47,6 +47,20 @@
           "Python": 1310,
           "JSON": 447,
           "TOML": 17
+        }
+      },
+      {
+        "repository": "ryanmeowy/anchr-web",
+        "branch": "main",
+        "commit": "bdeb3cfea6118b11e51051448e85fcde45f0f218",
+        "files": 85,
+        "code": 32523,
+        "languages": {
+          "TypeScript": 24074,
+          "CSS": 6787,
+          "JavaScript": 1574,
+          "JSON": 82,
+          "YAML": 6
         }
       },
       {
@@ -132,7 +146,7 @@
       {
         "repository": "ryanmeowy/ryanmeowy",
         "branch": "main",
-        "commit": "dc1cd6c41f91596bfabc2fdd01a5f81742b92897",
+        "commit": "d1db4f5dae769b00683e52ddc4912541b32d58a9",
         "files": 2,
         "code": 344,
         "languages": {
@@ -173,5 +187,5 @@
     ]
   },
   "since": 2020,
-  "updated": "2026-09-10"
+  "updated": "2026-09-11"
 }
