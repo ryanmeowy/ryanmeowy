@@ -1,11 +1,11 @@
 {
-  "repos": 28,
-  "stars": 90,
+  "repos": 16,
+  "stars": 94,
   "followers": 2,
   "following": 1,
-  "commits": 1220,
-  "contributions": 1277,
-  "lines_of_code": 110133,
+  "commits": 1239,
+  "contributions": 1295,
+  "lines_of_code": 109150,
   "code_counting": {
     "tool": "cloc 2.10",
     "scope": "Owned public non-fork default branches; excludes dependencies, generated output, comments and blank lines",
@@ -146,7 +146,7 @@
       {
         "repository": "ryanmeowy/ryanmeowy",
         "branch": "main",
-        "commit": "04b6694d391c9e11a5908eb8695c287168ba4395",
+        "commit": "038c03a8ad91d7ccda2785bacf3facbbe96a4416",
         "files": 2,
         "code": 344,
         "languages": {
@@ -172,20 +172,9 @@
           "Python": 492,
           "Protocol Buffers": 53
         }
-      },
-      {
-        "repository": "ryanmeowy/ThreadPoolDemo",
-        "branch": "main",
-        "commit": "dded0bd322baac9db6b778567feeba99c558469b",
-        "files": 4,
-        "code": 983,
-        "languages": {
-          "Java": 969,
-          "Maven": 14
-        }
       }
     ]
   },
   "since": 2020,
-  "updated": "2026-09-16"
+  "updated": "2026-09-17"
 }
