@@ -258,13 +258,12 @@ def render(stats, illustration, mobile=False):
             text(label_x, y, "GitHub Stats", "blue", 26, 600),
             line(panel_x, y + 16, panel_right)]
     rows = [
-        (("monitor", "Repos", "repos"), ("people", "Followers", "followers")),
-        (("commit", "Commits", "commits"), ("branch", "Following", "following")),
+        (("monitor", "Repos", "repos"), ("commit", "Commits", "commits")),
         (("code", "Lines of Code", "lines_of_code"), ("clock", "Since", "since")),
         (("star", "Stars", "stars"), ("trophy", "Contribution", "contributions")),
     ]
     divider = 303 if mobile else 1219
-    svg.append(f'<path d="M{divider} {y+40}v123" stroke="{COLORS["muted"]}" stroke-width="1" stroke-dasharray="7 4"/>')
+    svg.append(f'<path d="M{divider} {y+40}v90" stroke="{COLORS["muted"]}" stroke-width="1" stroke-dasharray="7 4"/>')
     for row, pair in enumerate(rows):
         for column, (glyph, label, key) in enumerate(pair):
             x = panel_x + column * (280 if mobile else 324)
@@ -297,14 +296,14 @@ def render(stats, illustration, mobile=False):
     for row, value in enumerate(["Good", "Search", "Better", "Answers."]):
         svg.append(text(cat_x + 127, cat_y + row*20, value, "text", 18))
     if mobile:
-        svg += [text(36, y + 209, "Contribution: last year", "muted", 16),
+        svg += [text(36, y + 175, "Contribution: last year", "muted", 16),
                 text(36, 1290, "// still searching", "muted", 16),
                 text(36, 1316, "// for a better tomorrow ...", "muted", 16),
-                '<g font-style="italic">' + text(40, 1384, '“ A search engine for my second brain. ”', "muted", 19) + '</g>']
+                '<g font-style="italic">' + text(40, 1384, '“ Every answer cites its source. ”', "muted", 19) + '</g>']
     else:
         svg += [text(70, 834, "// still searching for a better tomorrow ...", "muted", 20),
                 f'<path d="M599 815h11v26h-11z" fill="{COLORS["muted"]}"/>',
-                '<g font-style="italic">' + text(806, 834, '“ A search engine for my second brain. ”', "muted", 19) + '</g>']
+                '<g font-style="italic">' + text(806, 834, '“ Every answer cites its source. ”', "muted", 19) + '</g>']
     svg += ['</g>', '</svg>']
     return "\n".join(svg) + "\n"
 
