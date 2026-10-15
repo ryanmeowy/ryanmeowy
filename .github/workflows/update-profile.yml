@@ -1,4 +1,4 @@
-name: Refresh profile card
+name: Refresh profile panel
 
 on:
   workflow_dispatch:
@@ -8,7 +8,6 @@ on:
     branches: [main]
     paths:
       - 'scripts/build_profile.py'
-      - 'assets/workspace.png'
       - '.github/workflows/update-profile.yml'
 
 permissions:
@@ -39,7 +38,7 @@ jobs:
         run: python3 scripts/build_profile.py --refresh
       - name: Save updated cards
         run: |
-          git add assets/hero.svg assets/hero-mobile.svg assets/panel.svg assets/stats.json
+          git add assets/panel.svg assets/stats.json
           if git diff --cached --quiet; then
             exit 0
           fi

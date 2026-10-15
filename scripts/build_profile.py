@@ -214,8 +214,7 @@ def line(x1, y, x2):
 def panel_block(svg, stats, panel_x, panel_y, panel_right, value_x, label_x, size, step, mobile=False):
     """Terminal info panel and GitHub stats grid. Appends fragments to svg.
 
-    Returns the baseline of the "GitHub Stats" heading, which the mobile hero
-    still needs for its trailing caption.
+    Returns the baseline of the "GitHub Stats" heading.
     """
     svg += [text(panel_x, panel_y, USERNAME, "green", 28, 600),
             text(panel_x + 152, panel_y, "@github", "blue", 28, 600),
@@ -289,54 +288,6 @@ def render_panel(stats):
     return "\n".join(svg) + "\n"
 
 
-def render(stats, illustration, mobile=False):
-    width, height = (600, 1444) if mobile else (1672, 941)
-    frame_x, frame_y = (12, 16) if mobile else (38, 68)
-    frame_w, frame_h = (576, 1412) if mobile else (1596, 814)
-    art_x, art_y, art_w, art_h = (32, 92, 536, 429) if mobile else (64, 135, 818, 651)
-    panel_x, panel_y = (36, 570) if mobile else (916, 164)
-    panel_right = 564 if mobile else 1588
-    value_x = 230 if mobile else 1158
-    label_x = panel_x + (36 if mobile else 54)
-    size, step = (22, 34) if mobile else (22, 33)
-    svg = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
-        '<title id="title">ryanmeowy@github — pixel workspace</title>',
-        '<desc id="desc">Ryan, backend engineer. Search / RAG / Agent. Java, Python. Building Anchr in Shanghai. Pixel art of a programmer with clear-lens eyeglasses and a sleeping cat, technical books, coffee and a Shanghai moonlit skyline.</desc>',
-        '<defs><radialGradient id="canvas"><stop stop-color="#102139"/><stop offset="1" stop-color="#050d16"/></radialGradient>',
-        '<linearGradient id="terminal" x2="0" y2="1"><stop stop-color="#091119"/><stop offset=".6" stop-color="#080f17"/><stop offset="1" stop-color="#0a131e"/></linearGradient>',
-        '<filter id="glow" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="5"/></filter></defs>',
-        f'<path fill="url(#canvas)" d="M0 0h{width}v{height}H0z"/>',
-        f'<rect x="{frame_x}" y="{frame_y}" width="{frame_w}" height="{frame_h}" rx="14" fill="none" stroke="#204b7d" stroke-width="5" opacity=".35" filter="url(#glow)"/>',
-        f'<rect x="{frame_x}" y="{frame_y}" width="{frame_w}" height="{frame_h}" rx="14" fill="url(#terminal)" stroke="#4983b1" stroke-width="1.5"/>',
-        f'<rect x="{frame_x+16}" y="{frame_y+52}" width="{frame_w-32}" height="{frame_h-72}" rx="8" fill="none" stroke="#243f56" stroke-width="1.5"/>',
-        '<g font-family="Menlo, Consolas, Liberation Mono, monospace">',
-    ]
-    for offset, color in [(36, "#ff605e"), (74, "#ffcb3d"), (112, "#52ec6c")]:
-        svg.append(f'<circle cx="{frame_x+offset}" cy="{frame_y+30}" r="10" fill="{color}"/>')
-    svg.append(f'<image x="{art_x}" y="{art_y}" width="{art_w}" height="{art_h}" preserveAspectRatio="none" xlink:href="data:image/png;base64,{illustration}"/>')
-    y = panel_block(svg, stats, panel_x, panel_y, panel_right, value_x, label_x, size, step, mobile)
-    cat_x, cat_y = (350, 1260) if mobile else (1360, 780)
-    cat_lines = ["  /\\_/\\", " / ^ ^ \\", "(  ·ω·  )", " \\_____/"]
-    # SVG collapses leading spaces by default, shifting the ears and chin left.
-    svg.append('<g id="cat-art">')
-    for row, value in enumerate(cat_lines):
-        svg.append(text(cat_x, cat_y + row*21, value, "text", 20))
-    svg.append('</g>')
-    for row, value in enumerate(["Good", "Search", "Better", "Answers."]):
-        svg.append(text(cat_x + 127, cat_y + row*20, value, "text", 18))
-    if mobile:
-        svg += [text(36, y + 175, "Contribution: last year", "muted", 16),
-                text(36, 1290, "// still searching", "muted", 16),
-                text(36, 1316, "// for a better tomorrow ...", "muted", 16),
-                '<g font-style="italic">' + text(40, 1384, '“ Every answer cites its source. ”', "muted", 19) + '</g>']
-    else:
-        svg += [text(70, 834, "// still searching for a better tomorrow ...", "muted", 20),
-                f'<path d="M599 815h11v26h-11z" fill="{COLORS["muted"]}"/>',
-                '<g font-style="italic">' + text(806, 834, '“ Every answer cites its source. ”', "muted", 19) + '</g>']
-    svg += ['</g>', '</svg>']
-    return "\n".join(svg) + "\n"
-
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--refresh", action="store_true", help="Fetch current public GitHub statistics")
@@ -344,17 +295,14 @@ def main():
     stats_path = ASSETS / "stats.json"
     # A failed refresh exits before writing, preserving the last successful cards.
     stats = fetch_stats() if args.refresh else json.loads(stats_path.read_text())
-    illustration = base64.b64encode((ASSETS / "workspace.png").read_bytes()).decode("ascii")
     cards = {
-        "hero.svg": render(stats, illustration),
-        "hero-mobile.svg": render(stats, illustration, True),
         "panel.svg": render_panel(stats),
     }
     for filename, contents in cards.items():
         (ASSETS / filename).write_text(contents, encoding="utf-8")
     if args.refresh:
         stats_path.write_text(json.dumps(stats, indent=2) + "\n", encoding="utf-8")
-    print("Built assets/hero.svg, assets/hero-mobile.svg and assets/panel.svg")
+    print("Built assets/panel.svg")
 
 
 if __name__ == "__main__":
