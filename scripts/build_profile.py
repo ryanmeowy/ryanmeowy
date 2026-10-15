@@ -52,8 +52,6 @@ FIELDS = [
     ("box", "Tools", "Elasticsearch, Spring Boot"),
     ("book", "Currently", "Building Anchr"),
     ("pin", "Location", "Shanghai, China"),
-    ("heart", "Interests", "Tech, Cats, Coffee, Photography"),
-    ("bolt", "Status", "Always Learning"),
 ]
 COLORS = dict(bg="#091119", border="#38648a", text="#edf3fc",
               muted="#87a1bf", blue="#64c5ff", green="#60ef81", gold="#f5d76b", red="#ff696e")
@@ -213,6 +211,84 @@ def line(x1, y, x2):
     return f'<path d="M{x1} {y}H{x2}" stroke="{COLORS["blue"]}" stroke-width="1.6" stroke-dasharray="10 2"/>'
 
 
+def panel_block(svg, stats, panel_x, panel_y, panel_right, value_x, label_x, size, step, mobile=False):
+    """Terminal info panel and GitHub stats grid. Appends fragments to svg.
+
+    Returns the baseline of the "GitHub Stats" heading, which the mobile hero
+    still needs for its trailing caption.
+    """
+    svg += [text(panel_x, panel_y, USERNAME, "green", 28, 600),
+            text(panel_x + 152, panel_y, "@github", "blue", 28, 600),
+            line(panel_x, panel_y + 18, panel_right)]
+    y = panel_y + 56
+    for name, label, value in FIELDS:
+        color = "text"
+        glyph_color = "blue"
+        svg += [icon(name, panel_x + 1, y - 21, glyph_color, 25),
+                text(label_x, y, label, "blue", size),
+                text(value_x - (24 if mobile else 36), y, ":", "text", size)]
+        values = (value.split(", ") if label == "Tools" else wrap(value, width=24)) if mobile else [value]
+        for part in values:
+            svg.append(text(value_x, y, part, color, size))
+            y += step
+    y += 32
+    svg += [icon("stats", panel_x, y - 23, "green", 26),
+            text(label_x, y, "GitHub Stats", "blue", 26, 600),
+            line(panel_x, y + 16, panel_right)]
+    rows = [
+        (("monitor", "Repos", "repos"), ("commit", "Commits", "commits")),
+        (("code", "Lines of Code", "lines_of_code"), ("clock", "Since", "since")),
+        (("star", "Stars", "stars"), ("trophy", "Contribution", "contributions")),
+    ]
+    heading_y = y
+    divider = panel_x + (267 if mobile else 303)
+    svg.append(f'<path d="M{divider} {y+40}v90" stroke="{COLORS["muted"]}" stroke-width="1" stroke-dasharray="7 4"/>')
+    for row, pair in enumerate(rows):
+        for column, (glyph, label, key) in enumerate(pair):
+            x = panel_x + column * (280 if mobile else 324)
+            baseline = y + 54 + row * 34
+            label_offset = 34 if mobile else (56 if column == 0 else 44)
+            colon_x = x + (177 if mobile else (204 if column == 0 else 184))
+            number_x = x + (198 if mobile else (224 if column == 0 else 208))
+            value = stats.get(key)
+            display = "—" if value is None else str(value) if key == "since" else f"{value:,}"
+            glyph_color = "gold" if glyph in {"star", "code"} else "text" if column == 0 else "blue"
+            tooltip = {
+                "commits": "Sum of GitHub commit contributions since account creation; excludes commits not counted by GitHub's contribution graph.",
+                "lines_of_code": "Current source lines measured by cloc across owned public non-fork default branches, excluding dependencies, generated output, comments and blank lines. Not an authorship total.",
+                "contributions": "Contributions during the last 12 months, as returned by GitHub.",
+            }.get(key, label)
+            svg += ['<g><title>' + escape(tooltip) + '</title>',
+                    icon(glyph, x + 3, baseline - 20, glyph_color, 23 if mobile else 25),
+                    text(x + label_offset, baseline, label, "blue", 17 if mobile else 18),
+                    text(colon_x, baseline, ":", "text", 18),
+                    text(number_x, baseline, display, "text", 18 if mobile else 19), '</g>']
+            if key == "contributions" and not mobile:
+                svg.append(text(number_x + len(display) * 11.5 + 10, baseline, "(last year)", "muted", 15))
+    return heading_y
+
+
+def render_panel(stats):
+    """Standalone terminal panel — the card's right half, floated into the README intro."""
+    width, height = 800, 634
+    svg = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
+        '<title id="title">ryanmeowy@github — profile panel</title>',
+        '<desc id="desc">Ryan, backend engineer. Search / RAG / Agent. Java, Python. Elasticsearch, Spring Boot. Building Anchr in Shanghai, China.</desc>',
+        '<defs><linearGradient id="terminal" x2="0" y2="1"><stop stop-color="#091119"/><stop offset=".6" stop-color="#080f17"/><stop offset="1" stop-color="#0a131e"/></linearGradient>',
+        '<filter id="glow" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="5"/></filter></defs>',
+        '<rect x="14" y="14" width="772" height="606" rx="14" fill="none" stroke="#204b7d" stroke-width="5" opacity=".35" filter="url(#glow)"/>',
+        '<rect x="14" y="14" width="772" height="606" rx="14" fill="url(#terminal)" stroke="#4983b1" stroke-width="1.5"/>',
+        '<rect x="34" y="66" width="732" height="538" rx="8" fill="none" stroke="#243f56" stroke-width="1.5"/>',
+        '<g font-family="Menlo, Consolas, Liberation Mono, monospace">',
+    ]
+    for offset, color in [(50, "#ff605e"), (88, "#ffcb3d"), (126, "#52ec6c")]:
+        svg.append(f'<circle cx="{offset}" cy="44" r="10" fill="{color}"/>')
+    panel_block(svg, stats, 60, 132, 732, 302, 114, 22, 33)
+    svg += ['</g>', '</svg>']
+    return "\n".join(svg) + "\n"
+
+
 def render(stats, illustration, mobile=False):
     width, height = (600, 1444) if mobile else (1672, 941)
     frame_x, frame_y = (12, 16) if mobile else (38, 68)
@@ -239,53 +315,7 @@ def render(stats, illustration, mobile=False):
     for offset, color in [(36, "#ff605e"), (74, "#ffcb3d"), (112, "#52ec6c")]:
         svg.append(f'<circle cx="{frame_x+offset}" cy="{frame_y+30}" r="10" fill="{color}"/>')
     svg.append(f'<image x="{art_x}" y="{art_y}" width="{art_w}" height="{art_h}" preserveAspectRatio="none" xlink:href="data:image/png;base64,{illustration}"/>')
-    svg += [text(panel_x, panel_y, USERNAME, "green", 28, 600),
-            text(panel_x + 152, panel_y, "@github", "blue", 28, 600),
-            line(panel_x, panel_y + 18, panel_right)]
-    y = panel_y + 56
-    for name, label, value in FIELDS:
-        color = "green" if label == "Status" else "text"
-        glyph_color = {"Status": "gold", "Interests": "red"}.get(label, "blue")
-        svg += [icon(name, panel_x + 1, y - 21, glyph_color, 25),
-                text(label_x, y, label, "blue", size),
-                text(value_x - (24 if mobile else 36), y, ":", "text", size)]
-        values = (value.split(", ") if label == "Tools" else wrap(value, width=24)) if mobile else [value]
-        for part in values:
-            svg.append(text(value_x, y, part, color, size))
-            y += step
-    y += 32
-    svg += [icon("stats", panel_x, y - 23, "green", 26),
-            text(label_x, y, "GitHub Stats", "blue", 26, 600),
-            line(panel_x, y + 16, panel_right)]
-    rows = [
-        (("monitor", "Repos", "repos"), ("commit", "Commits", "commits")),
-        (("code", "Lines of Code", "lines_of_code"), ("clock", "Since", "since")),
-        (("star", "Stars", "stars"), ("trophy", "Contribution", "contributions")),
-    ]
-    divider = 303 if mobile else 1219
-    svg.append(f'<path d="M{divider} {y+40}v90" stroke="{COLORS["muted"]}" stroke-width="1" stroke-dasharray="7 4"/>')
-    for row, pair in enumerate(rows):
-        for column, (glyph, label, key) in enumerate(pair):
-            x = panel_x + column * (280 if mobile else 324)
-            baseline = y + 54 + row * 34
-            label_offset = 34 if mobile else (56 if column == 0 else 44)
-            colon_x = x + (177 if mobile else (204 if column == 0 else 184))
-            number_x = x + (198 if mobile else (224 if column == 0 else 208))
-            value = stats.get(key)
-            display = "—" if value is None else str(value) if key == "since" else f"{value:,}"
-            glyph_color = "gold" if glyph in {"star", "code"} else "text" if column == 0 else "blue"
-            tooltip = {
-                "commits": "Sum of GitHub commit contributions since account creation; excludes commits not counted by GitHub's contribution graph.",
-                "lines_of_code": "Current source lines measured by cloc across owned public non-fork default branches, excluding dependencies, generated output, comments and blank lines. Not an authorship total.",
-                "contributions": "Contributions during the last 12 months, as returned by GitHub.",
-            }.get(key, label)
-            svg += ['<g><title>' + escape(tooltip) + '</title>',
-                    icon(glyph, x + 3, baseline - 20, glyph_color, 23 if mobile else 25),
-                    text(x + label_offset, baseline, label, "blue", 17 if mobile else 18),
-                    text(colon_x, baseline, ":", "text", 18),
-                    text(number_x, baseline, display, "text", 18 if mobile else 19), '</g>']
-            if key == "contributions" and not mobile:
-                svg.append(text(number_x + len(display)*11.5 + 10, baseline, "(last year)", "muted", 15))
+    y = panel_block(svg, stats, panel_x, panel_y, panel_right, value_x, label_x, size, step, mobile)
     cat_x, cat_y = (350, 1260) if mobile else (1360, 780)
     cat_lines = ["  /\\_/\\", " / ^ ^ \\", "(  ·ω·  )", " \\_____/"]
     # SVG collapses leading spaces by default, shifting the ears and chin left.
@@ -315,12 +345,16 @@ def main():
     # A failed refresh exits before writing, preserving the last successful cards.
     stats = fetch_stats() if args.refresh else json.loads(stats_path.read_text())
     illustration = base64.b64encode((ASSETS / "workspace.png").read_bytes()).decode("ascii")
-    cards = {"hero.svg": render(stats, illustration), "hero-mobile.svg": render(stats, illustration, True)}
+    cards = {
+        "hero.svg": render(stats, illustration),
+        "hero-mobile.svg": render(stats, illustration, True),
+        "panel.svg": render_panel(stats),
+    }
     for filename, contents in cards.items():
         (ASSETS / filename).write_text(contents, encoding="utf-8")
     if args.refresh:
         stats_path.write_text(json.dumps(stats, indent=2) + "\n", encoding="utf-8")
-    print("Built assets/hero.svg and assets/hero-mobile.svg")
+    print("Built assets/hero.svg, assets/hero-mobile.svg and assets/panel.svg")
 
 
 if __name__ == "__main__":

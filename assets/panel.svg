@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="634" viewBox="0 0 800 634" role="img" aria-labelledby="title desc">
+<title id="title">ryanmeowy@github — profile panel</title>
+<desc id="desc">Ryan, backend engineer. Search / RAG / Agent. Java, Python. Elasticsearch, Spring Boot. Building Anchr in Shanghai, China.</desc>
+<defs><linearGradient id="terminal" x2="0" y2="1"><stop stop-color="#091119"/><stop offset=".6" stop-color="#080f17"/><stop offset="1" stop-color="#0a131e"/></linearGradient>
+<filter id="glow" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="5"/></filter></defs>
+<rect x="14" y="14" width="772" height="606" rx="14" fill="none" stroke="#204b7d" stroke-width="5" opacity=".35" filter="url(#glow)"/>
+<rect x="14" y="14" width="772" height="606" rx="14" fill="url(#terminal)" stroke="#4983b1" stroke-width="1.5"/>
+<rect x="34" y="66" width="732" height="538" rx="8" fill="none" stroke="#243f56" stroke-width="1.5"/>
+<g font-family="Menlo, Consolas, Liberation Mono, monospace">
+<circle cx="50" cy="44" r="10" fill="#ff605e"/>
+<circle cx="88" cy="44" r="10" fill="#ffcb3d"/>
+<circle cx="126" cy="44" r="10" fill="#52ec6c"/>
+<text xml:space="preserve" x="60" y="132" fill="#60ef81" font-size="28" font-weight="600">ryanmeowy</text>
+<text xml:space="preserve" x="212" y="132" fill="#64c5ff" font-size="28" font-weight="600">@github</text>
+<path d="M60 150H732" stroke="#64c5ff" stroke-width="1.6" stroke-dasharray="10 2"/>
+<g transform="translate(61 167) scale(1.25)" fill="none" color="#64c5ff" stroke="#64c5ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="5" r="3"/><path d="M3 19v-3a7 7 0 0 1 14 0v3z"/></g>
+<text xml:space="preserve" x="114" y="188" fill="#64c5ff" font-size="22" font-weight="400">Name</text>
+<text xml:space="preserve" x="266" y="188" fill="#edf3fc" font-size="22" font-weight="400">:</text>
+<text xml:space="preserve" x="302" y="188" fill="#edf3fc" font-size="22" font-weight="400">ryan</text>
+<g transform="translate(61 200) scale(1.25)" fill="none" color="#64c5ff" stroke="#64c5ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 4 6 6-6 6m9 1h6"/></g>
+<text xml:space="preserve" x="114" y="221" fill="#64c5ff" font-size="22" font-weight="400">Role</text>
+<text xml:space="preserve" x="266" y="221" fill="#edf3fc" font-size="22" font-weight="400">:</text>
+<text xml:space="preserve" x="302" y="221" fill="#edf3fc" font-size="22" font-weight="400">Backend Engineer</text>
+<g transform="translate(61 233) scale(1.25)" fill="none" color="#64c5ff" stroke="#64c5ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="8"/><circle cx="10" cy="10" r="4"/><path d="m10 10 9-9m-4 0h4v4"/></g>
+<text xml:space="preserve" x="114" y="254" fill="#64c5ff" font-size="22" font-weight="400">Focus</text>
+<text xml:space="preserve" x="266" y="254" fill="#edf3fc" font-size="22" font-weight="400">:</text>
+<text xml:space="preserve" x="302" y="254" fill="#edf3fc" font-size="22" font-weight="400">Search / RAG / Agent</text>
+<g transform="translate(61 266) scale(1.25)" fill="none" color="#64c5ff" stroke="#64c5ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 4-5 6 5 6m8-12 5 6-5 6M12 2 8 18"/></g>
+<text xml:space="preserve" x="114" y="287" fill="#64c5ff" font-size="22" font-weight="400">Languages</text>
+<text xml:space="preserve" x="266" y="287" fill="#edf3fc" font-size="22" font-weight="400">:</text>
+<text xml:space="preserve" x="302" y="287" fill="#edf3fc" font-size="22" font-weight="400">Java, Python</text>
+<g transform="translate(61 299) scale(1.25)" fill="none" color="#64c5ff" stroke="#64c5ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m10 1 8 4v10l-8 4-8-4V5zm0 8v10M2 5l8 4 8-4M6 3l8 4"/></g>
+<text xml:space="preserve" x="114" y="320" fill="#64c5ff" font-size="22" font-weight="400">Tools</text>
+<text xml:space="preserve" x="266" y="320" fill="#edf3fc" font-size="22" font-weight="400">:</text>
+<text xml:space="preserve" x="302" y="320" fill="#edf3fc" font-size="22" font-weight="400">Elasticsearch, Spring Boot</text>
+<g transform="translate(61 332) scale(1.25)" fill="none" color="#64c5ff" stroke="#64c5ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 4C6 1 2 2 1 3v14c3-1 6-1 9 2 3-3 6-3 9-2V3c-3-1-6-1-9 1v15"/></g>
+<text xml:space="preserve" x="114" y="353" fill="#64c5ff" font-size="22" font-weight="400">Currently</text>
+<text xml:space="preserve" x="266" y="353" fill="#edf3fc" font-size="22" font-weight="400">:</text>
+<text xml:space="preserve" x="302" y="353" fill="#edf3fc" font-size="22" font-weight="400">Building Anchr</text>
+<g transform="translate(61 365) scale(1.25)" fill="none" color="#64c5ff" stroke="#64c5ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8c0 5-7 11-7 11S3 13 3 8a7 7 0 1 1 14 0Z"/><circle cx="10" cy="8" r="2"/></g>
+<text xml:space="preserve" x="114" y="386" fill="#64c5ff" font-size="22" font-weight="400">Location</text>
+<text xml:space="preserve" x="266" y="386" fill="#edf3fc" font-size="22" font-weight="400">:</text>
+<text xml:space="preserve" x="302" y="386" fill="#edf3fc" font-size="22" font-weight="400">Shanghai, China</text>
+<g transform="translate(60 428) scale(1.3)" fill="none" color="#60ef81" stroke="#60ef81" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 19V12h3v7m4 0V7h3v12m4 0V1h3v18"/></g>
+<text xml:space="preserve" x="114" y="451" fill="#64c5ff" font-size="26" font-weight="600">GitHub Stats</text>
+<path d="M60 467H732" stroke="#64c5ff" stroke-width="1.6" stroke-dasharray="10 2"/>
+<path d="M363 491v90" stroke="#87a1bf" stroke-width="1" stroke-dasharray="7 4"/>
+<g><title>Repos</title>
+<g transform="translate(63 485) scale(1.25)" fill="none" color="#edf3fc" stroke="#edf3fc" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 1h16v14H2zM2 12h16M10 15v4m-5 0h10"/></g>
+<text xml:space="preserve" x="116" y="505" fill="#64c5ff" font-size="18" font-weight="400">Repos</text>
+<text xml:space="preserve" x="264" y="505" fill="#edf3fc" font-size="18" font-weight="400">:</text>
+<text xml:space="preserve" x="284" y="505" fill="#edf3fc" font-size="19" font-weight="400">18</text>
+</g>
+<g><title>Sum of GitHub commit contributions since account creation; excludes commits not counted by GitHub&#x27;s contribution graph.</title>
+<g transform="translate(387 485) scale(1.25)" fill="none" color="#64c5ff" stroke="#64c5ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="1" width="5" height="5" rx="1"/><rect x="1" y="14" width="5" height="5" rx="1"/><rect x="14" y="1" width="5" height="5" rx="1"/><rect x="14" y="14" width="5" height="5" rx="1"/><path d="M3.5 6v8m13-8v8M6 3.5h8M6 16.5h8"/></g>
+<text xml:space="preserve" x="428" y="505" fill="#64c5ff" font-size="18" font-weight="400">Commits</text>
+<text xml:space="preserve" x="568" y="505" fill="#edf3fc" font-size="18" font-weight="400">:</text>
+<text xml:space="preserve" x="592" y="505" fill="#edf3fc" font-size="19" font-weight="400">1,055</text>
+</g>
+<g><title>Current source lines measured by cloc across owned public non-fork default branches, excluding dependencies, generated output, comments and blank lines. Not an authorship total.</title>
+<g transform="translate(63 519) scale(1.25)" fill="none" color="#f5d76b" stroke="#f5d76b" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 4-5 6 5 6m8-12 5 6-5 6M12 2 8 18"/></g>
+<text xml:space="preserve" x="116" y="539" fill="#64c5ff" font-size="18" font-weight="400">Lines of Code</text>
+<text xml:space="preserve" x="264" y="539" fill="#edf3fc" font-size="18" font-weight="400">:</text>
+<text xml:space="preserve" x="284" y="539" fill="#edf3fc" font-size="19" font-weight="400">76,267</text>
+</g>
+<g><title>Since</title>
+<g transform="translate(387 519) scale(1.25)" fill="none" color="#64c5ff" stroke="#64c5ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="9"/><path d="M10 4v7l5 3"/></g>
+<text xml:space="preserve" x="428" y="539" fill="#64c5ff" font-size="18" font-weight="400">Since</text>
+<text xml:space="preserve" x="568" y="539" fill="#edf3fc" font-size="18" font-weight="400">:</text>
+<text xml:space="preserve" x="592" y="539" fill="#edf3fc" font-size="19" font-weight="400">2020</text>
+</g>
+<g><title>Stars</title>
+<g transform="translate(63 553) scale(1.25)" fill="none" color="#f5d76b" stroke="#f5d76b" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m10 1 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></g>
+<text xml:space="preserve" x="116" y="573" fill="#64c5ff" font-size="18" font-weight="400">Stars</text>
+<text xml:space="preserve" x="264" y="573" fill="#edf3fc" font-size="18" font-weight="400">:</text>
+<text xml:space="preserve" x="284" y="573" fill="#edf3fc" font-size="19" font-weight="400">142</text>
+</g>
+<g><title>Contributions during the last 12 months, as returned by GitHub.</title>
+<g transform="translate(387 553) scale(1.25)" fill="none" color="#64c5ff" stroke="#64c5ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 1h10v7a5 5 0 0 1-10 0zm0 2H1v3a5 5 0 0 0 5 5m9-8h4v3a5 5 0 0 1-5 5m-4 2v6m-5 0h10"/></g>
+<text xml:space="preserve" x="428" y="573" fill="#64c5ff" font-size="18" font-weight="400">Contribution</text>
+<text xml:space="preserve" x="568" y="573" fill="#edf3fc" font-size="18" font-weight="400">:</text>
+<text xml:space="preserve" x="592" y="573" fill="#edf3fc" font-size="19" font-weight="400">1,377</text>
+</g>
+<text xml:space="preserve" x="659.5" y="573" fill="#87a1bf" font-size="15" font-weight="400">(last year)</text>
+</g>
+</svg>

@@ -45,54 +45,45 @@
 <text xml:space="preserve" x="72" y="864" fill="#64c5ff" font-size="22" font-weight="400">Location</text>
 <text xml:space="preserve" x="206" y="864" fill="#edf3fc" font-size="22" font-weight="400">:</text>
 <text xml:space="preserve" x="230" y="864" fill="#edf3fc" font-size="22" font-weight="400">Shanghai, China</text>
-<g transform="translate(37 877) scale(1.25)" fill="none" color="#ff696e" stroke="#ff696e" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 19 2 11C-4 4 5-2 10 4c5-6 14 0 8 7z" fill="currentColor" stroke="none"/></g>
-<text xml:space="preserve" x="72" y="898" fill="#64c5ff" font-size="22" font-weight="400">Interests</text>
-<text xml:space="preserve" x="206" y="898" fill="#edf3fc" font-size="22" font-weight="400">:</text>
-<text xml:space="preserve" x="230" y="898" fill="#edf3fc" font-size="22" font-weight="400">Tech, Cats, Coffee,</text>
-<text xml:space="preserve" x="230" y="932" fill="#edf3fc" font-size="22" font-weight="400">Photography</text>
-<g transform="translate(37 945) scale(1.25)" fill="none" color="#f5d76b" stroke="#f5d76b" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 1-9 10h7l-2 8 9-11h-7z" fill="currentColor"/></g>
-<text xml:space="preserve" x="72" y="966" fill="#64c5ff" font-size="22" font-weight="400">Status</text>
-<text xml:space="preserve" x="206" y="966" fill="#edf3fc" font-size="22" font-weight="400">:</text>
-<text xml:space="preserve" x="230" y="966" fill="#60ef81" font-size="22" font-weight="400">Always Learning</text>
-<g transform="translate(36 1009) scale(1.3)" fill="none" color="#60ef81" stroke="#60ef81" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 19V12h3v7m4 0V7h3v12m4 0V1h3v18"/></g>
-<text xml:space="preserve" x="72" y="1032" fill="#64c5ff" font-size="26" font-weight="600">GitHub Stats</text>
-<path d="M36 1048H564" stroke="#64c5ff" stroke-width="1.6" stroke-dasharray="10 2"/>
-<path d="M303 1072v90" stroke="#87a1bf" stroke-width="1" stroke-dasharray="7 4"/>
+<g transform="translate(36 907) scale(1.3)" fill="none" color="#60ef81" stroke="#60ef81" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 19V12h3v7m4 0V7h3v12m4 0V1h3v18"/></g>
+<text xml:space="preserve" x="72" y="930" fill="#64c5ff" font-size="26" font-weight="600">GitHub Stats</text>
+<path d="M36 946H564" stroke="#64c5ff" stroke-width="1.6" stroke-dasharray="10 2"/>
+<path d="M303 970v90" stroke="#87a1bf" stroke-width="1" stroke-dasharray="7 4"/>
 <g><title>Repos</title>
-<g transform="translate(39 1066) scale(1.15)" fill="none" color="#edf3fc" stroke="#edf3fc" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 1h16v14H2zM2 12h16M10 15v4m-5 0h10"/></g>
-<text xml:space="preserve" x="70" y="1086" fill="#64c5ff" font-size="17" font-weight="400">Repos</text>
-<text xml:space="preserve" x="213" y="1086" fill="#edf3fc" font-size="18" font-weight="400">:</text>
-<text xml:space="preserve" x="234" y="1086" fill="#edf3fc" font-size="18" font-weight="400">19</text>
+<g transform="translate(39 964) scale(1.15)" fill="none" color="#edf3fc" stroke="#edf3fc" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 1h16v14H2zM2 12h16M10 15v4m-5 0h10"/></g>
+<text xml:space="preserve" x="70" y="984" fill="#64c5ff" font-size="17" font-weight="400">Repos</text>
+<text xml:space="preserve" x="213" y="984" fill="#edf3fc" font-size="18" font-weight="400">:</text>
+<text xml:space="preserve" x="234" y="984" fill="#edf3fc" font-size="18" font-weight="400">18</text>
 </g>
 <g><title>Sum of GitHub commit contributions since account creation; excludes commits not counted by GitHub&#x27;s contribution graph.</title>
-<g transform="translate(319 1066) scale(1.15)" fill="none" color="#64c5ff" stroke="#64c5ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="1" width="5" height="5" rx="1"/><rect x="1" y="14" width="5" height="5" rx="1"/><rect x="14" y="1" width="5" height="5" rx="1"/><rect x="14" y="14" width="5" height="5" rx="1"/><path d="M3.5 6v8m13-8v8M6 3.5h8M6 16.5h8"/></g>
-<text xml:space="preserve" x="350" y="1086" fill="#64c5ff" font-size="17" font-weight="400">Commits</text>
-<text xml:space="preserve" x="493" y="1086" fill="#edf3fc" font-size="18" font-weight="400">:</text>
-<text xml:space="preserve" x="514" y="1086" fill="#edf3fc" font-size="18" font-weight="400">1,251</text>
+<g transform="translate(319 964) scale(1.15)" fill="none" color="#64c5ff" stroke="#64c5ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="1" width="5" height="5" rx="1"/><rect x="1" y="14" width="5" height="5" rx="1"/><rect x="14" y="1" width="5" height="5" rx="1"/><rect x="14" y="14" width="5" height="5" rx="1"/><path d="M3.5 6v8m13-8v8M6 3.5h8M6 16.5h8"/></g>
+<text xml:space="preserve" x="350" y="984" fill="#64c5ff" font-size="17" font-weight="400">Commits</text>
+<text xml:space="preserve" x="493" y="984" fill="#edf3fc" font-size="18" font-weight="400">:</text>
+<text xml:space="preserve" x="514" y="984" fill="#edf3fc" font-size="18" font-weight="400">1,055</text>
 </g>
 <g><title>Current source lines measured by cloc across owned public non-fork default branches, excluding dependencies, generated output, comments and blank lines. Not an authorship total.</title>
-<g transform="translate(39 1100) scale(1.15)" fill="none" color="#f5d76b" stroke="#f5d76b" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 4-5 6 5 6m8-12 5 6-5 6M12 2 8 18"/></g>
-<text xml:space="preserve" x="70" y="1120" fill="#64c5ff" font-size="17" font-weight="400">Lines of Code</text>
-<text xml:space="preserve" x="213" y="1120" fill="#edf3fc" font-size="18" font-weight="400">:</text>
-<text xml:space="preserve" x="234" y="1120" fill="#edf3fc" font-size="18" font-weight="400">108,789</text>
+<g transform="translate(39 998) scale(1.15)" fill="none" color="#f5d76b" stroke="#f5d76b" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 4-5 6 5 6m8-12 5 6-5 6M12 2 8 18"/></g>
+<text xml:space="preserve" x="70" y="1018" fill="#64c5ff" font-size="17" font-weight="400">Lines of Code</text>
+<text xml:space="preserve" x="213" y="1018" fill="#edf3fc" font-size="18" font-weight="400">:</text>
+<text xml:space="preserve" x="234" y="1018" fill="#edf3fc" font-size="18" font-weight="400">76,267</text>
 </g>
 <g><title>Since</title>
-<g transform="translate(319 1100) scale(1.15)" fill="none" color="#64c5ff" stroke="#64c5ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="9"/><path d="M10 4v7l5 3"/></g>
-<text xml:space="preserve" x="350" y="1120" fill="#64c5ff" font-size="17" font-weight="400">Since</text>
-<text xml:space="preserve" x="493" y="1120" fill="#edf3fc" font-size="18" font-weight="400">:</text>
-<text xml:space="preserve" x="514" y="1120" fill="#edf3fc" font-size="18" font-weight="400">2020</text>
+<g transform="translate(319 998) scale(1.15)" fill="none" color="#64c5ff" stroke="#64c5ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="9"/><path d="M10 4v7l5 3"/></g>
+<text xml:space="preserve" x="350" y="1018" fill="#64c5ff" font-size="17" font-weight="400">Since</text>
+<text xml:space="preserve" x="493" y="1018" fill="#edf3fc" font-size="18" font-weight="400">:</text>
+<text xml:space="preserve" x="514" y="1018" fill="#edf3fc" font-size="18" font-weight="400">2020</text>
 </g>
 <g><title>Stars</title>
-<g transform="translate(39 1134) scale(1.15)" fill="none" color="#f5d76b" stroke="#f5d76b" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m10 1 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></g>
-<text xml:space="preserve" x="70" y="1154" fill="#64c5ff" font-size="17" font-weight="400">Stars</text>
-<text xml:space="preserve" x="213" y="1154" fill="#edf3fc" font-size="18" font-weight="400">:</text>
-<text xml:space="preserve" x="234" y="1154" fill="#edf3fc" font-size="18" font-weight="400">141</text>
+<g transform="translate(39 1032) scale(1.15)" fill="none" color="#f5d76b" stroke="#f5d76b" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m10 1 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></g>
+<text xml:space="preserve" x="70" y="1052" fill="#64c5ff" font-size="17" font-weight="400">Stars</text>
+<text xml:space="preserve" x="213" y="1052" fill="#edf3fc" font-size="18" font-weight="400">:</text>
+<text xml:space="preserve" x="234" y="1052" fill="#edf3fc" font-size="18" font-weight="400">142</text>
 </g>
 <g><title>Contributions during the last 12 months, as returned by GitHub.</title>
-<g transform="translate(319 1134) scale(1.15)" fill="none" color="#64c5ff" stroke="#64c5ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 1h10v7a5 5 0 0 1-10 0zm0 2H1v3a5 5 0 0 0 5 5m9-8h4v3a5 5 0 0 1-5 5m-4 2v6m-5 0h10"/></g>
-<text xml:space="preserve" x="350" y="1154" fill="#64c5ff" font-size="17" font-weight="400">Contribution</text>
-<text xml:space="preserve" x="493" y="1154" fill="#edf3fc" font-size="18" font-weight="400">:</text>
-<text xml:space="preserve" x="514" y="1154" fill="#edf3fc" font-size="18" font-weight="400">1,386</text>
+<g transform="translate(319 1032) scale(1.15)" fill="none" color="#64c5ff" stroke="#64c5ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 1h10v7a5 5 0 0 1-10 0zm0 2H1v3a5 5 0 0 0 5 5m9-8h4v3a5 5 0 0 1-5 5m-4 2v6m-5 0h10"/></g>
+<text xml:space="preserve" x="350" y="1052" fill="#64c5ff" font-size="17" font-weight="400">Contribution</text>
+<text xml:space="preserve" x="493" y="1052" fill="#edf3fc" font-size="18" font-weight="400">:</text>
+<text xml:space="preserve" x="514" y="1052" fill="#edf3fc" font-size="18" font-weight="400">1,377</text>
 </g>
 <g id="cat-art">
 <text xml:space="preserve" x="350" y="1260" fill="#edf3fc" font-size="20" font-weight="400">  /\_/\</text>
@@ -104,7 +95,7 @@
 <text xml:space="preserve" x="477" y="1280" fill="#edf3fc" font-size="18" font-weight="400">Search</text>
 <text xml:space="preserve" x="477" y="1300" fill="#edf3fc" font-size="18" font-weight="400">Better</text>
 <text xml:space="preserve" x="477" y="1320" fill="#edf3fc" font-size="18" font-weight="400">Answers.</text>
-<text xml:space="preserve" x="36" y="1207" fill="#87a1bf" font-size="16" font-weight="400">Contribution: last year</text>
+<text xml:space="preserve" x="36" y="1105" fill="#87a1bf" font-size="16" font-weight="400">Contribution: last year</text>
 <text xml:space="preserve" x="36" y="1290" fill="#87a1bf" font-size="16" font-weight="400">// still searching</text>
 <text xml:space="preserve" x="36" y="1316" fill="#87a1bf" font-size="16" font-weight="400">// for a better tomorrow ...</text>
 <g font-style="italic"><text xml:space="preserve" x="40" y="1384" fill="#87a1bf" font-size="19" font-weight="400">“ Every answer cites its source. ”</text></g>
