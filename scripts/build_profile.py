@@ -45,7 +45,7 @@ EXCLUDED_FILES = (
 EXCLUDED_EXTENSIONS = "md,markdown,rst,txt,csv,tsv,svg,lock"
 # Edit these lines, then run: python3 scripts/build_profile.py
 FIELDS = [
-    ("user", "Name", "ryan"),
+    ("user", "Name", "Ryan"),
     ("terminal", "Role", "Backend Engineer"),
     ("target", "Focus", "Search / RAG / Agent"),
     ("code", "Languages", "Java, Python"),
