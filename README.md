@@ -4,15 +4,15 @@
 
 ## Hi, I'm Ryan 👋
 
-Backend engineer. Most of my time goes into search and retrieval — the part
+Backend engineer. Most of my time goes into search, RAG, and agents — the part
 of the stack where you can't really hand-wave, because either the answer came
 out of a document or it didn't, and anyone can go check.
 
 That's shaped how I build. I'd rather measure retrieval than eyeball it, and I
-want the reasoning visible instead of buried in a prompt. It also has to run on
-a machine I control, which is a constraint I keep coming back to.
+want the reasoning visible instead of buried in a prompt. Whatever I ship also
+has to run on a machine I control, which is a constraint I keep coming back to.
 
-Java and Python, mostly, with Elasticsearch doing the heavy lifting when
+Java and Python, mostly — Spring Boot on the service side, Elasticsearch when
 search is the actual problem.
 
 </td>
